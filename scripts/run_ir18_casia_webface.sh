@@ -1,0 +1,21 @@
+python main.py \
+    --data_root data \
+    --train_data_path faces_webface_112x112 \
+    --val_data_path faces_webface_112x112 \
+    --prefix ir18_webface_arcface \
+    --use_wandb \
+    --use_mxrecord \
+    --gpus 0 \
+    --use_16bit \
+    --arch ir_18 \
+    --batch_size 128 \
+    --num_workers 4 \
+    --epochs 16 \
+    --lr_milestones 8,12,14 \
+    --lr 0.1 \
+    --head arcface \
+    --m 0.4 \
+    --h 0.333 \
+    --low_res_augmentation_prob 0.2 \
+    --crop_augmentation_prob 0.2 \
+    --photometric_augmentation_prob 0.2

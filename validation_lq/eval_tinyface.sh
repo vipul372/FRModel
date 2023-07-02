@@ -1,0 +1,1 @@
+python validate_tinyface.py --data_root ../data --model_name adaface_ir18_casia
